@@ -43,7 +43,6 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
 .logo{
   padding-top: 8px;
   display: flex;
-  justify-content: row;
 }
 
 .menu{
@@ -118,7 +117,7 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
   padding-top: 20px;
   font-size: 18px;
   display: flex;
-  text-align: center;
+ text-align: center;
 }
 
 .header__content-button{
@@ -182,6 +181,10 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
   height: 100%;
 }
 
+.section-f-img_2{
+  display: block;
+}
+
 .section-f-text>h1{
   text-align: left;
   font-size: 22px;
@@ -196,7 +199,7 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
   padding-top: 30px;
   padding-bottom: 70px;
   display: flex;
-  justify-content: left;
+  
 }
 
 .section-f-lern>a{
@@ -529,26 +532,105 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
   border-color: #323232;
 }
 
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+
 .footer{
+  padding: 70px 0;
   background:url(../img/footer__bgc.png)no-repeat bottom center;
 }
 
 .footer__content{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   color: #fff;
 }
 
 .footer__tajam{
   display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.logo__text{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__logo__text{
+  color: #06cec3;
+  font-size: 30px;
+}
+
+.footer__tajam__text{
+  font-size: 14px;
+  text-align: left;
+  padding-top: 20px;
 }
 
 .footer__ourstudio{
   display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  text-align: center;
+}
+
+.footer__ourstudio__inf{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fotter__ourstudio__img{
+  width: 18px;
+  height: 18px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.footer__ourstudio__text{
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer__ourstudio__inf__2{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer__stayintouch{
   display: flex;
+  flex-direction: column;
+  max-width: 300px;
 }
+
+.footer__stayintoch__subscribe{
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.footer__input{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  background-color: none;
+}
+
+.footer__button{
+  height: 29px;
+}
+
+.footer__stayintouch__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+

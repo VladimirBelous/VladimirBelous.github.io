@@ -47,18 +47,47 @@
 @media only screen and (max-width : 768px) {
 
 	
+.section-f-content{
+	flex-direction: column;
+}
+.section-f-img_2{
+		display: none;
+	}
+.section-f-h1{
+	padding-top: 30px;
+}
+.footer{
+	background-image: none;
+	background-color: #382c5f;
+	
+}
+.footer__stayintouch{
+	padding-top: 	40px;
+}
+.footer__stayintoch__subscribe{
+	padding-top: 20px;
+}
 
+.footer__ourstudio{
+	padding-top: 40px;
+}
+.footer__ourstudio__inf{
+	padding-top: 20px;
+}
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.header__content-h1{
+		padding-top: 20px;
+	}
 
 }
 
