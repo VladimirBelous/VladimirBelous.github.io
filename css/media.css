@@ -1,120 +1,33 @@
 /*==========  Desktop First Method  ==========*/
-
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
+  .header__content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-	.nav {display: none;}
-	.nav li {float: none;}
-	.nav li a {
-		border-top: 1px solid #eee;
-		border-left: 3px solid transparent;
-		background: #fff;
-		color: #666;
-	}
-	.nav li:first-child a {border-top: none;}
-	.nav li a:hover {
-		background: #f0f0f0;
-		color: #444;
-		border-left: 3px solid #515572;
-	}
-	.touch-menu {display: block;}
+  .toogle {
+    display: flex;
+  }
 
-	.header__content-h1{
-		padding-top: 100px;
-	}
-
-    .section__four__team{
-    	background-color: #382c5f;
-    	background-image: none;
-    	
-    }
-
-    .member{
-    	padding-top: 10px;
-    }
-
-    .ourclient{
-    	flex-direction: column;
-    }
+  .nav {
+    display: none;
+    margin-top: 5px;
+  }
+  .nav li {
+    margin: 0 40%;
+    padding: 10px 0;
+  }
 }
-
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-	
-.section-f-content{
-	flex-direction: column;
-}
-.section-f-img_2{
-		display: none;
-	}
-.section-f-h1{
-	padding-top: 30px;
-}
-.footer{
-	background-image: none;
-	background-color: #382c5f;
-	
-}
-.footer__stayintouch{
-	padding-top: 	40px;
-}
-.footer__stayintoch__subscribe{
-	padding-top: 20px;
-}
-
-.footer__ourstudio{
-	padding-top: 40px;
-}
-.footer__ourstudio__inf{
-	padding-top: 20px;
-}
-
-}
-
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-
-}
-
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-	.header__content-h1{
-		padding-top: 20px;
-	}
-
-}
-
-
 /*==========  Mobile First Method  ==========*/
-
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+/* Large Devices, Wide Screens */
 
-}
-
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
+/*# sourceMappingURL=media.css.map */
