@@ -37,11 +37,11 @@
 
  		<nav>
  			<ul class="nav">
- 				<li><a href="#">ГЛАВНАЯ</a></li>
- 				<li><a href="#">НАВЫКИ</a></li>
- 				<li><a href="#">ПОРТФОЛИО</a></li>
- 				<li><a href="#">СЕРТИФИКАТЫ</a></li>
- 				<li><a href="#">КОНТАКТЫ</a></li>
+ 				<li><a class="go_to" href="#section__main_anchor">ГЛАВНАЯ</a></li>
+ 				<li><a class="go_to" href="#section__skills_anchor">НАВЫКИ</a></li>
+ 				<li><a class="go_to" href="#section__certification_anchor">СЕРТИФИКАТЫ</a></li>
+ 				<li><a class="go_to" href="#section__portfolio_anchor">ПОРТФОЛИО</a></li>
+ 				<li><a class="go_to" href="#contact_anchor">КОНТАКТЫ</a></li>
  			</ul>
  		</nav>
  		
@@ -52,9 +52,9 @@
 
 </header>
 
-<section class="section__main">
+<section class="section__main" id="section__main_anchor">
 	
-  <div class="caontainer">
+  <div class="container">
   	<div class="main__content">
   		<div class="main_text">
   			<span class="bronz-color">VLADIMIR	</span>
@@ -69,7 +69,7 @@
 
 </section>
 
-<section class="section__skills">
+<section class="section__skills" id="section__skills_anchor">
 
  <div class="container__skills">
  	
@@ -95,7 +95,7 @@
 	
 </section>
 
-<section class="section__certification">
+<section class="section__certification" id="section__certification_anchor">
 	
  <div class="container">
 
@@ -127,7 +127,7 @@
 
 </section>
 
-<section class="section__portfolio">
+<section class="section__portfolio" id="section__portfolio_anchor">
 	<div class="container">
 		<div class="portfolio__content">
 		   <div class="certification__h1">
@@ -135,45 +135,47 @@
   	        </div>
 		</div>
 		<div class="portfolio__a">
-			<a href="#">
+			<a href="https://vladimirbelous.github.io/">
+				<div class="portfolio_img">
+					<img src="img/my_site.bmp" alt="">
+					<h1> My own</h1>
+				</div>
+			</a>
+
+			<a href="https://skadovskportofino.github.io/">
 				<div class="portfolio_img">
 					<img src="img/porto.jpg" alt="">
-					<h1>Skadovsk PortoFino</h1>
+					<h1> PORTOFINO</h1>
 				</div>
 			</a>
 
-			<a href="#">
+			<a href="https://vityaromanov.github.io/">
 				<div class="portfolio_img">
-					<img src="img/victor.jpg" alt="">
-					<h1>Vidia</h1>
+					<img src="img/Minimo.bmp" alt="">
+					<h1>Minimo</h1>
 				</div>
 			</a>
 
-			<a href="#">
+			<a href="https://www.diplom.md/">
 				<div class="portfolio_img">
 					<img src="img/trans.jpg" alt="">
-					<h1>Trans</h1>
+					<h1>Diplom</h1>
 				</div>
 			</a>
 
-			<a href="#">
+			<a href="http://dezolator.ru/unichtozhenie-tarakanov/">
 				<div class="portfolio_img">
 					<img src="img/dez.jpg" alt="">
 					<h1>dezolator</h1>
 				</div>
 			</a>
 
-			<a href="#">
-				<div class="portfolio_img">
-					<img src="img/porto.jpg" alt="">
-					<h1>SKADOVSK PORTOFINO</h1>
-				</div>
-			</a>
+			
 		</div>
 	</div>
 </section>
 
-<section class="contact">
+<!--<section class="contact" id="contact_anchor">
 	
  <div class="container">
  	<div class="contact_h1">
@@ -187,7 +189,7 @@
        
     <form method="post" action="" id="formMain" name="formMain">
         <input id="name" type="text" name="name" placeholder="Введите ваше имя" maxlength="30" autocomplete="off" required/><br>
-        <input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш имеил" maxlength="30" autocomplete="off" required/><br>
+        <input id="telephone" type="Tel" name="telephone" placeholder="Введите ваш емеил" maxlength="30" autocomplete="off" required/><br>
         <input id="mesage" type="Tel" name="telephone" placeholder="Ваше сообщение" maxlength="30" autocomplete="off" required/><br>
 
         <input id="button" type="button"  value="Заказать обратный звонок" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')"/>
@@ -209,7 +211,7 @@
  	</div>
  </div>
 
-</section>
+</section>-->
 
 
 

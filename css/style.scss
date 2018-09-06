@@ -133,26 +133,29 @@ ul,ol{
 }
 
 .menu__btn{
+	top: 30%;
 	display: flex;
 	position: relative;
+	width: 40px;
+    height: 40px;
 
 	span{
 		margin-top: -1px;
 		margin-left: -8px;
 		position: absolute;
-		top: 50%;
+		top: 30%;
 		left: 50%;
-		width: 15px;
+		width: 25px;
 		height: 2px;
 		background-color: #fff;
 		&::after,&::before{
 			content: '';
 			margin-top: -1px;
-		    margin-left: -8px;
+		    margin-left: -13px;
 		    position: absolute;
 		    top: 50%;
 		    left: 50%;
-		    width: 15px;
+		    width: 25px;
 		    height: 2px;
 		    background-color: #fff;
             transition: 0.2s;
@@ -189,7 +192,8 @@ ul,ol{
 	justify-content: space-around;
 	.main_img{
 		img{
-
+          width: 100%;
+          height: 100%;
 		}
 	}
 }
@@ -209,9 +213,10 @@ ul,ol{
 	}
 	
 	.main_text_last{
+		text-align: center;
 		font-size: 65px;
-		padding-left: 90px;
 		padding-top: 50px;
+
 		
 	}
 }
@@ -260,7 +265,7 @@ ul,ol{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	img{
-		padding: 10px;
+		padding: 10px;	
 	}
 }
 
@@ -271,7 +276,7 @@ ul,ol{
 }
 
 .certification__content{
-	padding-top: 40px;
+	padding: 40px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -280,7 +285,6 @@ ul,ol{
 	h1{
 		display: flex;
 		justify-content: space-around;
-		
 		padding: 0 20px;
 		font-size: 150px;
 		position: relative;
@@ -305,7 +309,12 @@ ul,ol{
 	padding-top: 40px;
 	display: flex;
 	justify-content: space-around;
-	
+}
+.sl_slide{
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 }
 
 /*                        PORTFOLIO SECTION               */
@@ -322,6 +331,7 @@ ul,ol{
 }
 
 .portfolio__a{
+	padding-bottom: 60px;
 	display: flex;
 	-webkit-flex-direction: row;
 	-moz-flex-direction: row;
@@ -343,6 +353,10 @@ ul,ol{
 		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column;
+		img{
+			max-width: 100%;
+            height: auto;
+		}
 		&:hover{
 			transition:1s;
 			transform: scale(1.1);
