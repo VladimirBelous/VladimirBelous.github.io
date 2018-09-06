@@ -26,26 +26,26 @@ $(document).ready(function(){
  $('.sl').slick();
 
 // Форма обратной связи
- function AjaxFormRequest(result_id,formMain,url) {
-                jQuery.ajax({
-                    url:     url,
-                    type:     "POST",
-                    dataType: "html",
-                    data: jQuery("#"+formMain).serialize(), 
-                    success: function(response) {
-                    document.getElementById(result_id).innerHTML = response;
-                },
-                error: function(response) {
-                document.getElementById(result_id).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
-                }
-             });
-
-             $(':input','#formMain')
- 				.not(':button, :submit, :reset, :hidden')
- 				.val('')
- 				.removeAttr('checked')
- 				.removeAttr('selected');
-} 
+$(document).ready(function(){
+    $('#button_contacts').click(function(){
+        var form_name   = $('#form_name').val();
+        var form_email   = $('#form_email').val();
+        var form_message = $('#form_message').val();
+        $.ajax({
+            url: "post.php", 
+            type: "post", 
+            dataType: "json", 
+            data: { 
+                "form_name":   form_name,
+                "form_email":   form_email,
+                "form_message": form_message
+            },
+            success: function(data){
+                $('.messages').html(data.result); 
+            }
+        });
+    });
+});
 
 // Плавная прокрутка
 $(document).ready(function(){

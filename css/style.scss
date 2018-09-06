@@ -372,53 +372,32 @@ ul,ol{
 	}
 }
 
-/*                        SKILLS SECTION               */
+/*                        СONTACT FORM SECTION               */
 
-.contact{
-	padding-top: 50px;
-}
-.contact_h1{
-	text-align: center;
-	font-size: 60px;
-}
-.contact__conent{
+.contact_content{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
-}
-.form{
-	input{
-		padding: 10px 40px;
-		margin-top: 40px;
-		font-family: Galaktika;
-		font-size: 40px;
-		color: $bronz-color;
-	}
-	#name,#telephone,#mesage{
-		padding: 10px 60.5px;
-	}
-	#button{
-		border:0;
-		background: none
+	.other_contact{
+		display: flex;
+		.social{
+		 a{
+		 	img{
+		 		width: 50px;
+			height: 50px;
+		 	}
+		 }
+		}
 	}
 }
 
-
-.contact_contact{
+.contact_form{
 	display: flex;
 	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
 	flex-direction: column;
-	justify-content: space-around;
-	font-size: 50px;	
-	color: $bronz-color;
-	.social{
-		display: flex;
-		img{
-			max-width: 60px;
-			min-height: 60px;
-		}
-	}
+	-ms-align-items: center;
+	align-items: center;
 }
