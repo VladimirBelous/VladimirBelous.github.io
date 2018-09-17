@@ -1,9 +1,208 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /*==========  CONTACKT  ==========*/
+  .contact {
+    background: url(../img/contact_media_bg.png) repeat; }
+
+  /*==========  MAP  ==========*/
+  .section__map iframe {
+    width: 90%; } }
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /*==========  HEADER  ==========*/
+  .header__inner {
+    display: none; }
+
+  /*==========  Section__main  ==========*/
+  .section__main {
+    padding-top: 50px; }
+
+  .section__content__h1 {
+    font-size: 50px; }
+
+  .section__content__h2 {
+    font-size: 40px; }
+
+  .section__button {
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 10px 20px; }
+
+  /*==========  SECTION__HwWork  ==========*/
+  .section__hwWork {
+    background: url(../img/footer_bot.png) repeat; }
+
+  .section__hwWork__step {
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center; }
+
+  .section__hwWork__step-4 {
+    padding-right: 0; }
+
+  .Arrow, .Arrow_2, .Arrow_3 {
+    display: none; }
+
+  .section__hwWork__step-2, .section__hwWork__step-3, .section__hwWork__step-4, .section__hwWork__step-5 {
+    padding-top: 30px; }
+
+  .order1 {
+    order: 1; }
+
+  .order2 {
+    order: 2; }
+
+  /*==========  SECTION__QUESTIONS  ==========*/
+  .questions_content {
+    -ms-align-items: center;
+    align-items: center; }
+    .questions_content span {
+      font-size: 30px;
+      text-align: center; }
+
+  .qustions_telephon img {
+    display: none; }
+
+  .qustions_telephon-text p {
+    padding: 0 0;
+    text-align: center; }
+  .qustions_telephon-text h1 {
+    padding: 0 0;
+    color: #323232; }
+
+  /*==========  CONTACKT  ==========*/
+  .contact__content img {
+    display: none; } }
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*==========  HEADER  ==========*/
+  .header {
+    padding: 10px 0; }
+
+  /*==========  Section__main  ==========*/
+  .section__main {
+    padding-top: 30px; }
+
+  .section__content__h1 {
+    font-size: 30px; }
+
+  .section__content__h2 {
+    font-size: 20px; }
+
+  .section__button {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 10px 20px; }
+
+  /*==========  SECTION__QUESTIONS  ==========*/
+  .questions {
+    display: none; }
+
+  .questions_content span {
+    font-size: 20px; }
+
+  /*==========  CONTACKT  ==========*/
+  .inp_1 {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 100px; }
+
+  .input_text {
+    height: 50px; }
+
+  .conact__button {
+    width: 90%; }
+
+  /*==========  FOOTER  ==========*/
+  .footer {
+    background-image: none; }
+
+  .footer__top__content {
+    padding-top: 20px;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center; }
+
+  .footer__top__text {
+    text-align: center; }
+
+  .footer__top__text, .footer__top__social {
+    padding-top: 20px; }
+
+  .footer__bottom__content {
+    padding-bottom: 25px; }
+    .footer__bottom__content h1 {
+      padding-top: 20px;
+      text-align: center; }
+
+  .footer__bottom__content-cart {
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center; }
+
+  .footer_media {
+    display: none; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /*==========  HEADER  ==========*/
+  .header {
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center; }
+
+  .header__contact {
+    padding-bottom: 20px; }
+
+  /*==========  Section__main  ==========*/
+  .section__main {
+    padding-top: 15px; }
+
+  .section__content__h1 {
+    font-size: 20px; }
+
+  .section__content__h2 {
+    font-size: 15px; }
+
+  .section__button {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 10px 20px; }
+
+  /*==========  SECTION__HwWork  ==========*/
+  .section__hwWork__content-h1 {
+    font-size: 30px;
+    padding-bottom: 20px; }
+
+  /*==========  CONTACKT  ==========*/
+  .inp_1, .input_text, .select {
+    font-size: 14px;
+    width: 70%; }
+
+  .conact__button {
+    width: 60%;
+    font-size: 14px; } }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /*==========  Section__main  ==========*/
+  .section__main {
+    padding-top: 10px; }
+
+  .section__content__h1 {
+    font-size: 16px; }
+
+  .section__content__h2 {
+    font-size: 14px;
+    padding-top: 10px; }
+
+  .section__button {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px 8px; } }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
