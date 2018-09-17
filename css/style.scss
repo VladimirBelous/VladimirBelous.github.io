@@ -156,6 +156,68 @@ ul,ol{
     font-size: 23px;
     border-radius: 10px;
 }
+
+/*                ---SPECIAL_AUTO---               */
+.specialAuto__content__h1{
+	text-align: center;
+	font-size: 40px;
+}
+.specialAuto__content__h2{
+	padding-top: 30px;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.toggles{
+	display: flex;
+	justify-content: space-around;
+	button{
+		border: none;
+		background-color: $white-color;
+		color: $black-color;
+		cursor: pointer;
+		font-size: 30px;
+	&:hover{
+		color:$oranje-color;
+	}
+	}
+}
+.posts{
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+.post{
+	margin-top: 20px;
+	text-align: center;
+	background-color: $grey-color;
+	
+}
+.post_h1{
+		
+		font-size: 24px;
+}
+.post-price{
+        font-size: 20px;
+		
+		color: $oranje-color;
+}
+.post-smena{
+		font-size: 24px;
+		
+}
+
+
 /*                ---SECTION__SERVICES---               */
 .section{
 	padding: 90px 0;
@@ -325,5 +387,180 @@ ul,ol{
 			text-decoration: underline;
 			
 		}
+	}
+}
+
+/*                ---CONTACT---               */
+
+.contact{
+	background: url(../img/form_bg.png) no-repeat center top;
+	background-size: 100%;
+}
+.contact__content{
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.forma{
+	padding: 10px 35px;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	background: url(../img/forma__bg_cont.png) repeat;
+	span{
+		font-size: 24px;
+	}
+}
+.inp_1{
+	font-size: 24px;
+	color: $black-color;
+	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 200px;
+}
+.select{
+	font-size: 24px;
+	border: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 200px;
+}
+.input_text{
+	height: 100px;
+}
+.conact__button{
+	border: none;
+	border-radius: 5px;
+	width: 290px;
+	height: 75px;
+	font-size: 25px;
+	color: $white-color;
+	background-color: $oranje-color;
+}
+
+
+/*                ---SECTION__MAP---               */
+.section-pt{
+	padding-top: 90px;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+.section__map{
+	padding-top: 30px;
+	iframe{
+		width: 1550px;
+	}
+}
+
+/*                ---FOOTER---               */
+
+.footer{
+	background: url(../img/footer_bg.png) center bottom;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+
+
+.footer__top{
+	background: url(../img/footer__top__content-bg.png) repeat;
+}
+.footer__top__content{
+	padding-top: 90px;
+	padding-bottom: 90px;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer__telephon{
+	padding-top: 20px;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	img{
+		width: 45px;
+		height: 35px;
+	}
+	span{
+		font-size: 18px;
+	}
+}
+.footer__top__text{
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.footer__top__social{
+   display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+}
+.footer__top__social-img{
+	width: 32px;
+	height: 32px;
+	margin-right: 10px;
+}
+.footer__top__text{
+	a{
+	padding-top: 5px;
+	font-size: 18px;
+	text-decoration: underline;
+	color: #151212;
+	}
+	
+}
+
+.footer__bottom{
+	background: url(../img/footer_bot.png) repeat;
+}
+.footer__bottom__content{
+	padding-bottom: 150px;
+	color: $white-color;
+	h1{
+		padding-top: 80px;
+		font-size: 22px;
+		text-align: left;
+	}
+}
+.footer__bottom__content-cart{
+	padding-top: 80px;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer__bottom__text{
+	width: 280px;
+	a{
+		color: $white-color;
+		font-size: 18px;
 	}
 }
