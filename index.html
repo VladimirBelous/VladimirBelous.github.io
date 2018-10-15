@@ -21,7 +21,7 @@
 </head>
 <body class="body">
 
-<div class="wrapper">
+<div class="container">
 	
 <header class="header">
 	
@@ -74,7 +74,10 @@
 
  </div>
 
+</div>
+
  <div class="header_menu">
+ 	<div class="container">
  	<nav>
  		<ul class="nav">
  			<li><a href="#">Главная</a></li>
@@ -85,10 +88,13 @@
  			<li><a href="#">Контакты</a></li>
  		</ul>
  	</nav>
+ 	</div>
  </div>
 
 </header>
 
+
+<div class="container">
 <section class="main">
 	<div class="money">
 		<img src="img/fivethouthent.jpg" alt="">
@@ -96,41 +102,42 @@
 
 	<div class="contact_form">
 		<h1>БЫСТРЫЙ ЗАКАЗ</h1>
-		<form id="form">
-			<ul>
-				<li>
-					<label for="name">Вид услуги</label> <input type="text" name="name" placeholder="Выберите услугу" required />
-				</li>
-				<li>
-					<label for="name">Площадь <br>помещения</label> <input type="text" name="name" rows="2" placeholder="Напишите площадь по полу" required />
-				</li>
-				<li>
-					<label for="name">Площадь окон</label> <input type="text" name="name" placeholder="Напишите площадь окон или фасадов" required />
-				</li>
-				<li>
-					<label for="name">Степень <br>загрязнения</label> <input type="text" name="name" placeholder="Выберите степень " required />
-				</li>
-				<li>
-					<label for="name">Дата работ</label> <input type="text" name="name" placeholder="Выберите время на проведение работ" required />
-				</li>
-				<li>
-					<label for="name">Фото/Видео</label> <input type="text" name="name" placeholder="Прикрепите фото или короткое видео" required />
-				</li>
-				<li>
-					<label for="name">Адрес</label> <input type="text" name="name" placeholder="Напишите адрес объекта" required />
-				</li>
-				<li>
-					<label for="name">Имя</label> <input type="text" name="name" placeholder="Ваше имя / email" required />
-				</li>
-				<li>
-					<label for="name">Телефон</label> <input type="text" name="name" placeholder="+7(___) ___-___-___" required />
-				</li>
-				<li>
-					<button>Отправить</button>
-				</li>
-			</ul>
+		<form action="post" enctype="multipart/form-data" id="form">
 			
-	</form>
+          <select name="vid" id="dorm_vid">
+          	<option value="vid_1">Выберите вид услуги</option>
+          	<option value="vid_1">Выберите вид услуги</option>
+          	<option value="vid_1">Выберите вид услуги</option>
+          	<option value="vid_1">Выберите вид услуги</option>
+          	<option value="vid_1">Выберите вид услуги</option>
+          </select>
+
+          <input id="form_input" type="text" name="name" placeholder="Напишите площадь помещения" required>
+
+          <input id="form_input" type="text" name="name" placeholder="Напишите площадь окон/фасадов" required>
+
+          <select name="vid" id="dorm_step">
+          	<option value="vid_1">Выберите степень загрязнения</option>
+          	<option value="vid_1">Выберите степень загрязнения</option>
+          	<option value="vid_1">Выберите степень загрязнения</option>
+          	<option value="vid_1">Выберите степень загрязнения</option>
+          	<option value="vid_1">Выберите степень загрязнения</option>
+          </select>
+
+          <div class="download">
+          	<span>Прикрепить фото/видео</span>
+          	<input type="file">
+          </div>
+
+          <input id="form_input" type="text" name="name" placeholder="Напишите адрес объекта" required>
+
+           <input id="form_input" type="text" name="name" placeholder="Ваше Имя или email" required>
+
+            <input id="form_input" type="text" name="name" maxlength="10" autocomplete="off" placeholder="+7(___)___-__-__" required>
+
+            <button>ОТПРАВИТЬ</button>
+
+		</form>
 	</div>
 </section>
 

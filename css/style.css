@@ -37,12 +37,11 @@ a {
 }
 
 /*             ---CONTAINER---              */
-.wrapper {
+.container {
   max-width: 960px;
   margin: 0 auto;
   padding-right: 10px;
   padding-left: 10px;
-  border: 1px solid red;
 }
 
 /*             ---HEADER---              */
@@ -109,6 +108,11 @@ a {
   font-size: 20px;
 }
 
+.header_menu {
+  margin-top: 25px;
+  background-color: #4682B4;
+}
+
 .toogle {
   display: none;
 }
@@ -116,14 +120,19 @@ a {
 .nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: #4682B4;
+  justify-content: space-between;
 }
 .nav li {
   text-align: center;
   width: 100%;
-  padding: 10px;
-  border: 1px solid #323232;
+  padding: 5px 10px;
+  border-right: 1px solid #323232;
+}
+.nav li:first-child {
+  border-left: 1px solid #323232;
+}
+.nav li:hover {
+  background-color: #275e85;
 }
 .nav li a {
   color: #fff;
@@ -183,8 +192,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+.main .money {
+  padding-top: 30px;
+}
 .main .money img {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
 
@@ -200,44 +212,41 @@ a {
 }
 
 #form {
-  border: 1px solid #323232;
-}
-#form ul li {
-  text-align: center;
-  border-bottom: 1px solid #323232;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  background-color: #4682B4;
 }
-#form ul li label {
-  padding: 5px 50px;
-  font-size: 20px;
-  color: #275e85;
-}
-#form ul li input {
-  box-sizing: border-box;
-  padding: 0 30px;
+#form #form_input {
+  padding: 5px 20px;
+  margin-top: 10px;
   border: none;
 }
-#form ul li input[placeholder] {
-  text-overflow: ellipsis;
+#form #dorm_step {
+  margin-top: 10px;
 }
-#form ul li input::-moz-placeholder {
-  text-overflow: ellipsis;
-}
-#form ul li input:-moz-placeholder {
-  text-overflow: ellipsis;
-}
-#form ul li input:-ms-input-placeholder {
-  text-overflow: ellipsis;
-}
-#form ul li button {
-  padding: 10px 0;
-  color: #fff;
-  font-size: 20px;
-  width: 100%;
+#form #dorm_vid, #form #dorm_step {
   border: none;
-  background-color: #275e85;
+  padding: 5px 20px;
+}
+#form .download {
+  margin-top: 10px;
+  background-color: #fff;
+}
+#form .download input {
+  max-width: 114px;
+  color: #323232;
+}
+#form button {
+  margin-top: 10px;
+  padding: 5px 0;
+  border: 1px solid #275e85;
+  background-color: #32CD32;
+  border-radius: 5px;
+  width: 70%;
+}
+#form button:hover {
+  background-color: #00FF00;
 }
 
 /*             ---SERVICE---              */

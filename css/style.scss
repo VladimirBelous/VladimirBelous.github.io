@@ -1,6 +1,6 @@
 /*             ---MAIN VARIABLE---              */
 
- $blue-color: #4682B4;
+ $blue-white-color: #4682B4;
  $white-color: #fff;
  $color-blue: #275e85;
  $black-color: #323232;
@@ -49,12 +49,12 @@ ul,ol{
 
  /*             ---CONTAINER---              */
 
- .wrapper{
+ .container{
     max-width: 960px;
     margin: 0 auto;
     padding-right: 10px;
     padding-left: 10px;
-    border: 1px solid red;
+    
  }
  
  /*             ---HEADER---              */
@@ -127,19 +127,28 @@ ul,ol{
 }
 
 
+.header_menu{
+  margin-top: 25px;
+  background-color: $blue-white-color;
+}
 .toogle{
   display: none;
 }
 .nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: $blue-color;
+  justify-content: space-between;
   li{
     text-align: center;
     width: 100%;
-    padding: 10px;
-    border: 1px solid $black-color;
+    padding: 5px 10px;
+    border-right: 1px solid $black-color;
+   &:first-child{
+      border-left: 1px solid $black-color;
+    }
+    &:hover{
+      background-color: $color-blue;
+    }
     a{ 
       color: #fff;
       font-size: 18px;
@@ -204,8 +213,9 @@ ul,ol{
   flex-direction: row;
   justify-content: space-between;
   .money{
+    padding-top: 30px;
     img{
-      width: 100%;
+      width: 120%;
       height: auto;
     }
   }
@@ -223,39 +233,41 @@ ul,ol{
 }
 
 #form{
-  border: 1px solid $black-color;
-  ul{
-    li{
-      text-align: center;
-      border-bottom: 1px solid $black-color;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      label{
-        padding: 5px 50px;
-        font-size: 20px;
-        color: $color-blue;
-      }
-      input{
-        box-sizing: border-box;
-        padding: 0 30px;
-        border: none;
-      }
-      input[placeholder]          {text-overflow:ellipsis;}
-      input::-moz-placeholder     {text-overflow:ellipsis;} 
-      input:-moz-placeholder      {text-overflow:ellipsis;} 
-      input:-ms-input-placeholder {text-overflow:ellipsis;} 
-      button{
-        padding: 10px 0;
-        color: #fff;
-        font-size: 20px;
-        width: 100%;
-        border: none;
-        background-color: $color-blue;
-      }
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: $blue-white-color;
+  #form_input{
+    padding: 5px 20px;
+    margin-top: 10px;
+    border: none;
+  }
+  #dorm_step{
+    margin-top: 10px;
+  }
+  #dorm_vid,#dorm_step{
+    border: none;
+    padding: 5px 20px;
+  }
+  .download{
+    margin-top: 10px;
+    background-color: $white-color;
+    input{
+      max-width: 114px;
+      color: $black-color;
     }
   }
-  
+  button{
+    margin-top: 10px;
+    padding: 5px 0;
+    border: 1px solid $color-blue;
+    background-color: #32CD32;
+    border-radius: 5px;
+    width: 70%;
+    &:hover{
+      background-color: #00FF00;
+    }
+  }
 }
 
 
