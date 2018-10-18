@@ -64,13 +64,13 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 46px;
+    width: 70px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background: transparent;
-    color: transparent;
+    background: #DBDBD7;
+    color: #336084;
     top: 50%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
