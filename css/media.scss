@@ -6,18 +6,49 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    
-   
-    
-
-
-
-	
+@media only screen and (max-width : 960px) {
+    .main{
+    	flex-direction: column;
+    }
+    .service_card{
+    	justify-content: space-around;
+    }
+	#form ul li input{padding: 0;}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 850px) {
+	 .header_main{
+    	flex-wrap: wrap;
+    	-ms-align-items: center;
+    	align-items: center;
+    }
+   .title_text{
+   	display: none;
+   }
+   .header_contact{
+   	padding: 10px 0;
+   }
+   .header_h1{
+   	padding: 10px 0;
+   	order: 1;
+   }
+
+   .toogle{
+    display: flex;
+   }
+   .nav{
+   	display: none;
+   	top: 16%;
+   	right: 0;
+   	position: absolute;
+   	flex-direction: column;
+   	width: 100%;
+   	li{
+   		width: 100%;
+   	}
+   }
+
 
     
 }
