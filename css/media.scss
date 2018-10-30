@@ -6,64 +6,89 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 960px) {
-    .main{
-    	flex-direction: column;
+@media only screen and (max-width : 992px) {
+
+    .header__content{
+         flex-direction: column;
+         justify-content: space-around;
     }
-    .service_card{
-    	justify-content: space-around;
+    .toogle{
+        display: flex;
     }
-	#form ul li input{padding: 0;}
+    .nav{
+        display: none;
+        margin-top: 40px;
+        li{
+            margin:  0 40%;
+            padding: 10px 0;
+        }
+    }
+
+	
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 850px) {
-	 .header_main{
-    	flex-wrap: wrap;
-    	-ms-align-items: center;
-    	align-items: center;
+@media only screen and (max-width : 768px) {
+
+    .section__main__content{
+        display: flex;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
     }
-   .title_text{
-   	display: none;
-   }
-   .header_contact{
-   	padding: 10px 0;
-   }
-   .header_h1{
-   	padding: 10px 0;
-   	order: 1;
-   }
+    .name{
+        padding-top: 100px;
+        font-size: 40px;
+    }
+    .section__main{
+        font-size: 30px;
+    }
+    .jobs{
+        padding-bottom: 700px;
+    }
 
-   .toogle{
-    display: flex;
+    .portfolio__a{
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
    }
-   .nav{
-   	display: none;
-   	top: 16%;
-   	right: 0;
-   	position: absolute;
-   	flex-direction: column;
-   	width: 100%;
-   	li{
-   		width: 100%;
-   	}
-   }
+   
 
 
-    
 }
-
-  
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
-   
+    .section__main{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 30px;
+    }
+
+    .portfolio_img{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+   }
+
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+
+    .section__main{
+        font-size: 13px;
+    }
+    .name{
+        font-size: 20px;
+    }
 	
 }
 

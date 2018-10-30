@@ -1,11 +1,8 @@
-// БУРГЕР
 $('.menu__btn').on('click', function(e) {
   e.preventDefault;
   $(this).toggleClass('menu__btn__active')
 });
 
-
-// МЕНЮ
 $(document).ready(function(){
 			var touch = $('.menu__btn');
 		    var menu = $('.nav');
@@ -22,33 +19,18 @@ $(document).ready(function(){
 		    });
 		});
 
-// СЛАЙДЕР
-$('.sl').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
-    
 
-// Форма обратной связи
+
+// СЛАЙДЕР
+ $('.sl').slick();
+
+ // Плавная прокрутка
 $(document).ready(function(){
-    $('#button_contacts').click(function(){
-        var form_name   = $('#form_name').val();
-        var form_email   = $('#form_email').val();
-        var form_message = $('#form_message').val();
-        $.ajax({
-            url: "post.php", 
-            type: "post", 
-            dataType: "json", 
-            data: { 
-                "form_name":   form_name,
-                "form_email":   form_email,
-                "form_message": form_message
-            },
-            success: function(data){
-                $('.messages').html(data.result); 
-            }
-        });
+    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+  var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+      $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
+        }
+      return false; // выключаем стандартное действие
     });
 });
-
