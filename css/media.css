@@ -1,64 +1,54 @@
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  .header__content {
-    flex-direction: column;
-    justify-content: space-around; }
+@media only screen and (max-width: 1360px) {
+  .call {
+    padding-top: 100px; }
+    .call .call_r span {
+      font-size: 30px; }
+    .call .call_r p {
+      font-size: 32px; } }
+@media only screen and (max-width: 1200px) {
+  .header_content {
+    padding-right: 5px;
+    padding-left: 5px; }
+
+  .mini-menu {
+    position: relative; }
 
   .toogle {
     display: flex; }
 
   .nav {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    width: 205px; }
+
+  .card {
     margin-top: 40px; }
-    .nav li {
-      margin: 0 40%;
-      padding: 10px 0; } }
+    .card:hover {
+      margin-top: 40px; } }
+@media only screen and (max-width: 1060px) {
+  .call {
+    padding-top: 80px; }
+    .call .call_r span {
+      font-size: 25px; }
+    .call .call_r p {
+      font-size: 27px; }
+    .call .call_r a {
+      padding: 10px 60px; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .call {
+    background-image: none;
+    background: linear-gradient(to right, #4146b8, #92d3f8); } }
+@media only screen and (max-width: 860px) {
+  .call_content {
+    flex-direction: column; } }
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  .section__main__content {
-    display: flex;
-    flex-direction: column;
-    -ms-align-items: center;
-    align-items: center; }
-
-  .name {
-    padding-top: 100px;
-    font-size: 40px; }
-
-  .section__main {
-    font-size: 30px; }
-
-  .jobs {
-    padding-bottom: 700px; }
-
-  .portfolio__a {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-    -ms-align-items: center;
-    align-items: center; } }
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .section__main {
-    font-size: 20px; }
-
-  .name {
-    font-size: 30px; }
-
-  .portfolio_img img {
-    max-width: 100%;
-    height: auto; } }
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  .section__main {
-    font-size: 13px; }
-
-  .name {
-    font-size: 20px; } }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
