@@ -12,7 +12,14 @@
 			font-size: 32px;
 		}
 	}
-		} 
+		}
+	.main_content{
+		flex-direction: column-reverse;
+		.main_slider{
+			padding-bottom: 30px;
+		}
+
+	}
 }
 
 @media only screen and (max-width : 1200px) {
@@ -79,7 +86,28 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.logo{
+		span{
+			font-size: 30px;
+		}
+	}
 
+    .nav{
+  li{
+    a{
+      color: #323232;
+    }
+  }
+}
+
+    .footer{
+    	background-image: none;
+    	background: linear-gradient(to right, #4146b8, #92d3f8);
+    	
+    }
+	.footer_content{
+		flex-direction: column;
+	}
 
 }
 

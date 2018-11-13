@@ -132,32 +132,32 @@ ul,ol{
 }
 .menu__btn{
   display: flex;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 2px solid $black;
-  background-color: #fff;
+  border: 2px solid $white;
   position: relative;
 
   span{
     margin-top: -1px;
-    margin-left: -8px;
+    margin-left: -11px;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 15px;
+    width: 23px;
     height: 2px;
-    background-color: #222;
+    background-color: $white;
     &::after,&::before{
       content: '';
       margin-top: -1px;
-        margin-left: -7px;
+      margin-bottom: 3px;
+        margin-left: -12px;
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 15px;
+        width: 23px;
         height: 2px;
-        background-color: #222;
+        background-color: $white;
             transition: 0.2s;
     }
     &::after{
@@ -212,7 +212,9 @@ ul,ol{
 }
 
 .main_slider{
-  height: 800px;
+  img{
+    width: 100%;
+  }
 }
 
 /*             ---advantage---              */
@@ -279,7 +281,7 @@ ul,ol{
 .steps{
   padding-top: 120px;
   background: url(../img/steps_bg.png) no-repeat bottom right;
-  background-size-: contain;
+  background-size: contain;
   h1{
     font-size: 36px;
     color: $blue-white;
@@ -409,7 +411,7 @@ ul,ol{
 
 .text{
   padding-top: 40px;
-  width: 600px;
+  width: 55%;
   font-size: 20px;
   color: $blue;
 }
@@ -515,7 +517,14 @@ ul,ol{
   .fini{
     @include fd-c;
     span{
+      padding-top: 20px;
       font-size: 24px;
+    }
+    img{
+      padding-top: 20px;
+      width: 200px;
+      height: auto;
+      margin: 0 auto;
     }
   }
 }
