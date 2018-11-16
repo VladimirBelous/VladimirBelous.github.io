@@ -31,7 +31,7 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
 
 body{
 	color: $blue;
-  font-family: Arial,sans-serif;
+  font-family: Gilroy-light,sans-serif;
   font-size: 26px;
 }
 
@@ -82,7 +82,7 @@ ul,ol{
    .second_bg_img{
      z-index: -1;
     position: absolute;
-    height: 100%;
+    bottom: 0;
     width: 100%;
     
    }
@@ -96,11 +96,11 @@ ul,ol{
   padding-top: 20px;
   @include fd-r;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .logo{
   @include fd-r;
-  align-items: flex-end;
+  align-items: center;
   img{
     padding-right: 5px;
     width: 94px;
@@ -108,7 +108,8 @@ ul,ol{
   }
   span{
     color: $blue-white;
-    font-size: 60px;
+    font-size: 45px;
+    font-family: FONTSPRING-extrabold,sans-serif;
 
   }
 }
@@ -118,7 +119,7 @@ ul,ol{
   li{
     padding: 0 30px;
     a{
-      font-size: 30px;
+      font-size: 26px;
       color: $white;
       &:hover{
         color: $blue-white;
@@ -184,7 +185,7 @@ ul,ol{
 /*             ---MAIN---              */
 
 .main{
-  padding-top: 140px;
+  padding: 128px 0;
 }
 .main_content{
   @include fd-r;
@@ -192,16 +193,17 @@ ul,ol{
 }
 
 .main_left{
+  padding-left: 60px;
   @include fd-c;
   -ms-align-items: center;
   align-items: center;
   align-items: center;
   span{
+    padding-bottom: 50px;
     text-align: center;
     color: $black;
   }
   a{
-    margin-top: 20px;
     padding: 10px 80px;
     border: 3px solid $white;
     border-radius: 60px;
@@ -212,15 +214,50 @@ ul,ol{
 }
 
 .main_slider{
-  img{
-    width: 100%;
-  }
+  width: 50%;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  
+  margin: 0 auto;
+   
 }
+  .slider_bg{
+    position: relative;
+    height: 100%;
+  }
+  .slider_bg_img{
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+
+  }
+  .sl{
+    padding: 0;
+    width: 80%;
+    height: 70%;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: -10%;
+  }
+  .slider_img{
+    width: 100%;
+    height: auto;
+  }
+  .under_sl{
+    letter-spacing: 22px;
+    color: $black;
+    font-size: 26px;
+
+  }
 
 /*             ---advantage---              */
 
 .advantage{
-  padding-top: 120px;
+  padding-top: 150px;
   font-size: 30px;
   color: $blue-white;
     h1{
@@ -240,8 +277,8 @@ ul,ol{
 }
 
 .card{
-  margin-top: 200px;
-  margin-right: 30px;
+  margin-top: 150px;
+  margin-right: 10px;
   margin-left: 10px;
   @include fd-c;
   -ms-align-items: center;
@@ -253,7 +290,7 @@ ul,ol{
   color: #d0d0d2;
   transition: 0.5s ease;
   &:hover{
-    margin-top: 150px;
+    margin-top: 100px;
   }
   img{
     padding-top: 60px;
@@ -338,14 +375,15 @@ ul,ol{
       font-size: 40px;
       text-align: center;
     }
-    p{
+    a{
       text-align: center;
       padding-top: 25px;
       font-size: 42px;
       font-weight: bold;
+      color: $white;
     }
   }
-  a{
+  .call_a{
     padding: 10px 80px;
     border: 3px solid $white;
     border-radius: 60px;
@@ -381,7 +419,7 @@ ul,ol{
 .review{
   padding-top: 120px;
   padding-bottom: 60px;
-  h1{
+  .review_header{
     color: $blue-white;
     font-size: 36px;
     text-align: center;
@@ -391,57 +429,55 @@ ul,ol{
 .review_content{
   padding-top: 120px;
 }
+
+.slideshow-container{
+  display: flex;
+  flex-direction: column;
+}
 .mySlides{
   position: relative;
-
-  img{
-    position: absolute;
-    z-index: 4;
-    top: -17px;
-    right: 8%;
-  }
-}
-.mySlides_text{
   box-shadow: 0px 0px 25px 5px;
-  width: 80%;
-  z-index: 3;
-  color: #323232;
+  width: 75%;
+  text-align: left;
+  color: $black;
   background-color: $white;
 }
-
-.text{
-  padding-top: 40px;
-  width: 55%;
-  font-size: 20px;
+.mySlides_span{
+  padding-top: 60px;
+  padding-left: 80px;
+  width: 50%;
+  font-size: 26px;
   color: $blue;
 }
-.text_under{
-  padding-bottom: 80px;
-  h1{
-    padding-top: 100px;
-    text-align: left;
-    font-size: 40px;
-    color: $blue;
-  }
-  span{
-    color: $blue;
-    font-size: 35px;
-    font-style: italic;
-  }
+.mySlides_h1{
+  padding-top: 30px;
+  padding-left: 80px;
+  width: 50%;
+  font-size: 36px;
+  color: $blue;
 }
-
-.text,.text_under{
-  padding-left: 60px;
+.mySlides_p{
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-bottom: 60px;
+  width: 50%;
+  font-size: 30px;
+  font-style: italic;
+  color: $blue;
 }
-
+.rew_sl_img{
+  position: absolute;
+  top: 0;
+  right: -17%;
+}
 .dot_conteiner{
   text-align: center;
   
 }
 .dot{
   cursor: pointer;
-  height: 13px;
-  width: 13px;
+  height: 20px;
+  width: 20px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -449,7 +485,7 @@ ul,ol{
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover{
-  background-color: #717171;
+  background-color: $blue-white;
 }
 .fade{
   -webkit-animation-name: fade;
@@ -465,6 +501,7 @@ ul,ol{
   from{opacity: .4}
   to{opacity: 1}
 }
+
 
 /*             ---FOOTER---              */
 
@@ -492,7 +529,7 @@ ul,ol{
     @include fd-c;
     -ms-align-items: center;
     align-items: center;
-    a{
+    .footer_a{
     margin-top: 90px;
     padding: 10px 80px;
     border: 3px solid $white;
@@ -504,10 +541,14 @@ ul,ol{
     .social_icon{
       padding-top: 20px;
       @include fd-r;
-      img{
-        width: 61px;
-        height: 61px;
-      }
+      a{
+        img{
+          padding: 5px;
+          width: 60px;
+          height: 60px;
+
+        }
+  }
     }
     span{
       padding-top: 20px;

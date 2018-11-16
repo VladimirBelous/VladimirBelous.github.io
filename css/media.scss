@@ -16,10 +16,14 @@
 	.main_content{
 		flex-direction: column-reverse;
 		.main_slider{
-			padding-bottom: 30px;
+			padding-bottom: 300px;
+		}
+		.slider_bg{
+			padding-bottom: 80px;
 		}
 
 	}
+
 }
 
 @media only screen and (max-width : 1200px) {
@@ -65,6 +69,22 @@
 		}
 	  }
 	} 
+	.main_content{
+		flex-direction: column-reverse;
+		.main_left{
+			padding-left: 0;
+		}
+		.main_slider{
+			padding-bottom: 200px;
+		}
+		.slider_bg{
+			padding-bottom: 60px;
+		}
+
+	}
+	.sl{
+		top: 5px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -72,15 +92,54 @@
     .call{
     	background-image: none;
     	background: linear-gradient(to right, #4146b8, #92d3f8) ;
-    	
+    }
+    .slick-dots{
+    	bottom: -90%;
+    }
+
+
+    .review_content{
+    	padding-top: 300px;
+    }
+    .slideshow-container{
+    	-ms-align-items: center;
+    	align-items: center;
+    }
+    .rew_sl_img{
+    	top: -180px;
+    	right: 30%;
+    }
+    .mySlides{
+    	padding: 120px 100px 60px 60px;
+    	width: 80%;
+    	text-align: center;
+    }
+    .mySlides_h1{
+    	margin-top: 60px;
+    }
+    .mySlides_span,.mySlides_h1,.mySlides_p{
+    	width: 100%;
+    	padding: 0;
     }
    	
 }
 
 @media only screen and (max-width : 860px) {
-    .call_content{
-    	flex-direction: column;	
+.call_content{
+  flex-direction: column;	
+  span{
+  	padding-top: 20px;
+  }
+  .call_r{
+    span{
+      padding-top: 20px;
     }
+  }
+  a{
+  	margin-top: 20px;
+  }
+  
+}
 
    	
 }
@@ -100,10 +159,42 @@
   }
 }
 
+    .step_card{
+  
+  padding-bottom: 100px;
+  img{
+  	padding-top: 40px;
+    width: 80%;
+  }
+  h1{
+    padding-top: 20px;
+    font-size: 30px;
+    
+  }
+  span{
+  	text-align: center;
+    width: 90%;
+    padding-top: 20px;
+    font-size: 24px;
+    
+  }
+}
+
+
+    .rew_sl_img{
+    	top: -120px;
+    }
+
     .footer{
     	background-image: none;
     	background: linear-gradient(to right, #4146b8, #92d3f8);
     	
+    }
+    .pay{
+    	padding-top: 20px;
+    }
+    .fini{
+    	padding-bottom: 20px;
     }
 	.footer_content{
 		flex-direction: column;
@@ -116,12 +207,28 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 
-   
+   .under_sl{
+    letter-spacing: 10px;
+    font-size: 16px;
+  }
+  .rew_sl_img{
+    	top: -50px;
+   }
+   .mySlides{
+   	padding-right: 10px;
+   	padding-left: 10px;
+   	font-size: 16px;
+   }
+
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	
+   
+	
+	
 	
 }
 
