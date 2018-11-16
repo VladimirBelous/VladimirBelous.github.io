@@ -51,8 +51,10 @@
     .main_content .main_left {
       padding-left: 0; }
     .main_content .main_slider {
-      padding-bottom: 200px; }
+      padding-bottom: 200px;
+      width: 90%; }
     .main_content .slider_bg {
+      width: 100%;
       padding-bottom: 60px; }
 
   .sl {
