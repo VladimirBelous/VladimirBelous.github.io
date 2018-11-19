@@ -13,7 +13,7 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
 body {
   color: #4147b9;
   font-family: Gilroy-light,sans-serif;
-  font-size: 26px; }
+  font-size: 20px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -35,7 +35,7 @@ a {
 /*             ---CONTAINER---              */
 .container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1140px;
   margin: 0 auto; }
 
 .first_bg {
@@ -55,7 +55,7 @@ a {
 
 /*             ---HEADER---              */
 .header_content {
-  padding-top: 20px;
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,10 +68,10 @@ a {
   .logo img {
     padding-right: 5px;
     width: 94px;
-    height: auto; }
+    height: 94px; }
   .logo span {
     color: #92d3f8;
-    font-size: 45px;
+    font-size: 46px;
     font-family: FONTSPRING-extrabold,sans-serif; }
 
 .nav {
@@ -80,7 +80,7 @@ a {
   .nav li {
     padding: 0 30px; }
     .nav li a {
-      font-size: 26px;
+      font-size: 20px;
       color: #fff; }
       .nav li a:hover {
         color: #92d3f8; }
@@ -130,7 +130,7 @@ a {
 
 /*             ---MAIN---              */
 .main {
-  padding: 128px 0; }
+  padding: 80px 0; }
 
 .main_content {
   display: flex;
@@ -145,11 +145,12 @@ a {
   align-items: center;
   align-items: center; }
   .main_left span {
-    padding-bottom: 50px;
+    margin-bottom: 55px;
+    padding: 0 50px;
     text-align: center;
     color: #3e3e46; }
   .main_left a {
-    padding: 10px 80px;
+    padding: 10px 75px;
     border: 3px solid #fff;
     border-radius: 60px;
     background: linear-gradient(to right, #4146b8, #92d3f8);
@@ -180,7 +181,7 @@ a {
   height: 70%;
   z-index: 1;
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: -10%; }
 
 .slider_img {
@@ -188,9 +189,9 @@ a {
   height: auto; }
 
 .under_sl {
-  letter-spacing: 22px;
+  letter-spacing: 10px;
   color: #3e3e46;
-  font-size: 26px; }
+  font-size: 20px; }
 
 /*             ---advantage---              */
 .advantage {
@@ -218,11 +219,12 @@ a {
   flex-direction: column;
   -ms-align-items: center;
   align-items: center;
-  width: 320px;
-  height: 520px;
+  width: 260px;
+  height: 620px;
   box-shadow: 0px 12px 20px 10px;
   border-radius: 5px;
   color: #d0d0d2;
+  background-color: #fff;
   transition: 0.5s ease; }
   .card:hover {
     margin-top: 100px; }
@@ -253,7 +255,7 @@ a {
     text-align: center; }
 
 .steps_content {
-  padding-top: 100px;
+  padding-top: 45px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -268,16 +270,18 @@ a {
   flex-direction: column;
   align-items: center; }
   .step_card img {
-    width: 380px; }
+    width: 290px;
+    height: 290px; }
   .step_card h1 {
     padding-top: 64px;
     font-size: 30px;
     color: #4147b9; }
   .step_card span {
-    width: 200px;
+    width: 220px;
     padding-top: 45px;
-    font-size: 24px;
-    color: #4147b9; }
+    font-size: 20px;
+    color: #4147b9;
+    text-align: center; }
 
 /*             ---CALL---              */
 .call {
@@ -356,7 +360,7 @@ a {
 .mySlides_span {
   padding-top: 60px;
   padding-left: 80px;
-  width: 50%;
+  width: 70%;
   font-size: 26px;
   color: #4147b9; }
 

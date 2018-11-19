@@ -32,7 +32,7 @@ header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, vi
 body{
 	color: $blue;
   font-family: Gilroy-light,sans-serif;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 * {
@@ -63,7 +63,7 @@ ul,ol{
 
  .container{
  	  width: 100%;
-    max-width: 1480px;
+    max-width: 1140px;
     margin: 0 auto;
  }
  
@@ -93,7 +93,7 @@ ul,ol{
 /*             ---HEADER---              */
 
 .header_content{
-  padding-top: 20px;
+  padding-top: 30px;
   @include fd-r;
   justify-content: space-between;
   align-items: center;
@@ -104,11 +104,11 @@ ul,ol{
   img{
     padding-right: 5px;
     width: 94px;
-    height: auto;
+    height: 94px;
   }
   span{
     color: $blue-white;
-    font-size: 45px;
+    font-size: 46px;
     font-family: FONTSPRING-extrabold,sans-serif;
 
   }
@@ -119,7 +119,7 @@ ul,ol{
   li{
     padding: 0 30px;
     a{
-      font-size: 26px;
+      font-size: 20px;
       color: $white;
       &:hover{
         color: $blue-white;
@@ -185,7 +185,7 @@ ul,ol{
 /*             ---MAIN---              */
 
 .main{
-  padding: 128px 0;
+  padding: 80px 0;
 }
 .main_content{
   @include fd-r;
@@ -199,18 +199,20 @@ ul,ol{
   align-items: center;
   align-items: center;
   span{
-    padding-bottom: 50px;
+    margin-bottom: 55px;
+    padding: 0 50px;
     text-align: center;
     color: $black;
   }
   a{
-    padding: 10px 80px;
+    padding: 10px 75px;
     border: 3px solid $white;
     border-radius: 60px;
     background: linear-gradient(to right, #4146b8, #92d3f8);
     box-shadow: 0 0 17px 7px #cecece;
     color: $white;
   }
+
 }
 
 .main_slider{
@@ -240,7 +242,7 @@ ul,ol{
     height: 70%;
     z-index: 1;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: -10%;
   }
   .slider_img{
@@ -248,9 +250,9 @@ ul,ol{
     height: auto;
   }
   .under_sl{
-    letter-spacing: 22px;
+    letter-spacing: 10px;
     color: $black;
-    font-size: 26px;
+    font-size: 20px;
 
   }
 
@@ -283,11 +285,12 @@ ul,ol{
   @include fd-c;
   -ms-align-items: center;
   align-items: center;
-  width: 320px;
-  height: 520px;
+  width: 260px;
+  height: 620px;
   box-shadow: 0px 12px 20px 10px;
   border-radius: 5px;
   color: #d0d0d2;
+  background-color: $white;
   transition: 0.5s ease;
   &:hover{
     margin-top: 100px;
@@ -326,7 +329,7 @@ ul,ol{
   }
 }
 .steps_content{
-  padding-top: 100px;
+  padding-top: 45px;
   @include fd-r;
   justify-content: space-around;
   -webkit-flex-wrap: wrap;
@@ -340,7 +343,8 @@ ul,ol{
   @include fd-c;
   align-items: center;
   img{
-    width: 380px;
+    width: 290px;
+    height: 290px;
   }
   h1{
     padding-top: 64px;
@@ -348,10 +352,11 @@ ul,ol{
     color: $blue;
   }
   span{
-    width: 200px;
+    width: 220px;
     padding-top: 45px;
-    font-size: 24px;
+    font-size: 20px;
     color: $blue;
+    text-align: center;
   }
 }
 
@@ -445,7 +450,7 @@ ul,ol{
 .mySlides_span{
   padding-top: 60px;
   padding-left: 80px;
-  width: 50%;
+  width: 70%;
   font-size: 26px;
   color: $blue;
 }
