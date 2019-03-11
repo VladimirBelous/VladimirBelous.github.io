@@ -87,29 +87,52 @@ ul,ol{
 	flex-direction: row;
 	padding-top: 7px;
 	li{
-        padding: 0 30px;
+        padding: 0 20px;
+        transition: 0.5s;
 		a{
+			  padding: 5px 10px;
               color: #fff;
+              display: block;
               position: relative;
-              font-size: 18px;
-         &::after{
-			background-color: #e14b4d;
-			display: block;
-			content: "";
-			height: 1px;
-			width: 0%;
-			left: 50%;
-			position: absolute;
-			transition: width .3s ease-in-out;
-			transform: translateX(-50%);
-		}
-		&:hover::after{
-			width: 100%;
-		}
+              font-size: 16px;
+              transition: 0.5s;
 		}
 		
 	}
 }
+.nav:hover{
+	li{
+		a{
+			transform: scale(1.5);
+			opacity: .2;
+			filter: blur(5px);
+		}
+	}
+}
+.nav li a:hover{
+			transform: scale(1.25);
+			opacity: 1;
+			filter: blur(0);
+}
+.nav li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $red-color;
+	transition: transform 0.5s;
+	transform-origin: right;
+	transform: scaleX(0);
+	z-index: -1;
+}
+.nav li a:hover:before{
+	transition: transform 0.5s;
+	transform-origin: left;
+	transform: scaleX(1);
+}
+	
 
 .toogle{
 	display: none;
@@ -280,11 +303,9 @@ ul,ol{
 		flex-direction: column;
 		img{
 			max-width: 100%;
+			width: 400px;
+			height: 199px;
             height: auto;
-		}
-		&:hover{
-			transition:1s;
-			transform: scale(1.1);
 		}
 		h1{
 			font-size: 50px;
@@ -296,3 +317,6 @@ ul,ol{
 	
 	}
 }
+
+/*                        CONTACT SECTION               */
+

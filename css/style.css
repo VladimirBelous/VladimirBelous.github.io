@@ -65,23 +65,43 @@ a {
   flex-direction: row;
   padding-top: 7px; }
   .nav li {
-    padding: 0 30px; }
+    padding: 0 20px;
+    transition: 0.5s; }
     .nav li a {
+      padding: 5px 10px;
       color: #fff;
+      display: block;
       position: relative;
-      font-size: 18px; }
-      .nav li a::after {
-        background-color: #e14b4d;
-        display: block;
-        content: "";
-        height: 1px;
-        width: 0%;
-        left: 50%;
-        position: absolute;
-        transition: width .3s ease-in-out;
-        transform: translateX(-50%); }
-      .nav li a:hover::after {
-        width: 100%; }
+      font-size: 16px;
+      transition: 0.5s; }
+
+.nav:hover li a {
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(5px); }
+
+.nav li a:hover {
+  transform: scale(1.25);
+  opacity: 1;
+  filter: blur(0); }
+
+.nav li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dc494a;
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1; }
+
+.nav li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1); }
 
 .toogle {
   display: none; }
@@ -213,13 +233,14 @@ a {
       flex-direction: column; }
       .portfolio__a a .portfolio_img img {
         max-width: 100%;
+        width: 400px;
+        height: 199px;
         height: auto; }
-      .portfolio__a a .portfolio_img:hover {
-        transition: 1s;
-        transform: scale(1.1); }
       .portfolio__a a .portfolio_img h1 {
         font-size: 50px;
         color: #323232;
         text-align: center; }
+
+/*                        CONTACT SECTION               */
 
 /*# sourceMappingURL=style.css.map */
