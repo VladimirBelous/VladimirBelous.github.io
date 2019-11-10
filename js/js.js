@@ -4,12 +4,54 @@ $('.menu__btn').on('click', function(e) {
   $(this).toggleClass('menu__btn__active')
 });
 
+$('.menu_footer_service__btn_span').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu_footer_service__btn_active')
+});
+
+$('.menu_footer_company__btn_span').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu_footer_service__btn_active')
+});
+
 
 // МЕНЮ
 $(document).ready(function(){
 			var touch = $('.menu__btn');
 		    var menu = $('.nav');
-		 
+
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
+
+        $(document).ready(function(){
+			var touch = $('.menu_footer_service__btn');
+		    var menu = $('.menu_service_nav');
+
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
+
+        $(document).ready(function(){
+			var touch = $('.menu_footer_company__btn');
+		    var menu = $('.menu_about_nav');
+
 		    $(touch).on('click', function(e) {
 		        e.preventDefault();
 		        menu.slideToggle();
@@ -37,16 +79,16 @@ $(document).ready(function(){
         var form_email   = $('#form_email').val();
         var form_message = $('#form_message').val();
         $.ajax({
-            url: "post.php", 
-            type: "post", 
-            dataType: "json", 
-            data: { 
+            url: "post.php",
+            type: "post",
+            dataType: "json",
+            data: {
                 "form_name":   form_name,
                 "form_email":   form_email,
                 "form_message": form_message
             },
             success: function(data){
-                $('.messages').html(data.result); 
+                $('.messages').html(data.result);
             }
         });
     });
