@@ -480,7 +480,7 @@ img {
         margin: 0 auto;
         display: block; }
       .about_us_form .content .form_container .form_text {
-        padding-top: 15px;
+        padding: 15px 0;
         color: #797979;
         text-align: center;
         max-width: 410px;
