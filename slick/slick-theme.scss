@@ -10,7 +10,7 @@
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: #be935c !default;
+$slick-arrow-color: white !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "\2190" !default;
@@ -64,8 +64,8 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -91,7 +91,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         font-family: $slick-font-family;
-        font-size: 60px;
+        font-size: 20px;
         line-height: 1;
         color: $slick-arrow-color;
         opacity: $slick-opacity-default;
@@ -101,11 +101,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    z-index: 1;
-    left: 20px;
+    left: -25px;
     [dir="rtl"] & {
         left: auto;
-        right: 20px;
+        right: -25px;
     }
     &:before {
         content: $slick-prev-character;
@@ -116,9 +115,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: 30px;
+    right: -25px;
     [dir="rtl"] & {
-        left: 30px;
+        left: -25px;
         right: auto;
     }
     &:before {
