@@ -214,6 +214,7 @@ body{
       justify-content: space-around;
       align-items: center;
       .internet_shop{
+        position: relative;
         padding: 10px 0;
         padding-left: 20px;
         padding-right: 25px;
@@ -221,6 +222,7 @@ body{
         justify-content: center;
         align-items: center;
         background-color: $blue-color;
+        cursor: pointer;
         span{
           color: $white-color;
           letter-spacing: 0.01em;
@@ -250,11 +252,47 @@ body{
             top: 100%;
           }
         }
+        .nav_inShop{
+          display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 100%;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          background-color: #fff;
+          border: 1px solid #ECECEC;
+          border-top: 0px;
+          // border-bottom: 0px;
+          box-shadow: 0px 0px 4px rgba(153, 153, 153, 0.25);
+          .menu_inShop{
+            list-style: none;
+            width: 100%;
+            .menu_item{
+              width: 100%;
+              text-align: center;
+              a{
+                display: block;
+                width: 100%;
+                // border-bottom: 1px solid #ECECEC;
+                &:hover{
+                  color: $blue-color;
+                }
+              }
+            }
+          }
+        }
       }
       .nav{
         width: 100%;
+        min-height: 45px;
+    height: 100%;
         .menu-main{
           @include fd-r;
+          align-items: center;
+          min-height: 45px;
+    height: 100%;
           .menu-item{
             display: flex;
             flex-grow: 1;
@@ -267,9 +305,48 @@ body{
               }
             }
           }
+          .accordion_item{
+            position: relative
+          }
         }
       }
     }
+  }
+}
+
+.accordion_items{
+  display: none;
+position: absolute;
+    top: 150%;
+    padding: 15px 10px;
+    padding-right: 40px;
+    box-shadow: 0px 0px 4px rgba(153, 153, 153, 0.25);
+    z-index: 4;
+    background-color: #fff;
+}
+
+.accordion_menus{
+  // display: none;
+
+    list-style: none;
+
+
+}
+
+.ac_top{
+  // display: none;
+  position: absolute;
+        top: 0;
+    margin-top: -13px;
+    left: 10%;
+    /* background-color: #fff; */
+    z-index: 4;
+}
+
+
+.accordion_item{
+  &:hover .accordion_items{
+    display: block;
   }
 }
 
@@ -385,9 +462,8 @@ body{
   .content{
     @include fd-c;
     .title{
-      @include fd-r;
-      justify-content: flex-start;
-      align-items: center;
+      letter-spacing: 0.01em;
+      color: $black-color;
       font-size: 24px;
       .blue{
         padding-right: 5px;

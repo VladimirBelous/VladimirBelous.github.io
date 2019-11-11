@@ -152,6 +152,7 @@ img {
     justify-content: space-around;
     align-items: center; }
     .header_bottom .container .content .internet_shop {
+      position: relative;
       padding: 10px 0;
       padding-left: 20px;
       padding-right: 25px;
@@ -159,7 +160,8 @@ img {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      background-color: #4F75D2; }
+      background-color: #4F75D2;
+      cursor: pointer; }
       .header_bottom .container .content .internet_shop span {
         color: #fff;
         letter-spacing: 0.01em;
@@ -183,11 +185,37 @@ img {
           top: 50%; }
         .header_bottom .container .content .internet_shop .btn .bottom {
           top: 100%; }
+      .header_bottom .container .content .internet_shop .nav_inShop {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ECECEC;
+        border-top: 0px;
+        box-shadow: 0px 0px 4px rgba(153, 153, 153, 0.25); }
+        .header_bottom .container .content .internet_shop .nav_inShop .menu_inShop {
+          list-style: none;
+          width: 100%; }
+          .header_bottom .container .content .internet_shop .nav_inShop .menu_inShop .menu_item {
+            width: 100%;
+            text-align: center; }
+            .header_bottom .container .content .internet_shop .nav_inShop .menu_inShop .menu_item a {
+              display: block;
+              width: 100%; }
+              .header_bottom .container .content .internet_shop .nav_inShop .menu_inShop .menu_item a:hover {
+                color: #4F75D2; }
     .header_bottom .container .content .nav {
-      width: 100%; }
+      width: 100%;
+      min-height: 45px;
+      height: 100%; }
       .header_bottom .container .content .nav .menu-main {
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        align-items: center;
+        min-height: 45px;
+        height: 100%; }
         .header_bottom .container .content .nav .menu-main .menu-item {
           display: flex;
           flex-grow: 1;
@@ -197,6 +225,32 @@ img {
             letter-spacing: 0.01em; }
             .header_bottom .container .content .nav .menu-main .menu-item a:hover {
               color: #4F75D2; }
+        .header_bottom .container .content .nav .menu-main .accordion_item {
+          position: relative; }
+
+.accordion_items {
+  display: none;
+  position: absolute;
+  top: 150%;
+  padding: 15px 10px;
+  padding-right: 40px;
+  box-shadow: 0px 0px 4px rgba(153, 153, 153, 0.25);
+  z-index: 4;
+  background-color: #fff; }
+
+.accordion_menus {
+  list-style: none; }
+
+.ac_top {
+  position: absolute;
+  top: 0;
+  margin-top: -13px;
+  left: 10%;
+  /* background-color: #fff; */
+  z-index: 4; }
+
+.accordion_item:hover .accordion_items {
+  display: block; }
 
 /*             ---Bread_crumbs---              */
 .bread_crumbs {
@@ -288,10 +342,8 @@ img {
     display: flex;
     flex-direction: column; }
     .about_us_steps .content .title {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
+      letter-spacing: 0.01em;
+      color: #222222;
       font-size: 24px; }
       .about_us_steps .content .title .blue {
         padding-right: 5px;
