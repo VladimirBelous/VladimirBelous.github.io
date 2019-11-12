@@ -1,84 +1,84 @@
 // БУРГЕР
-// $('.menu__btn').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass('menu__btn__active')
-// });
+$('.menu__btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu__btn__active')
+});
 
-// $('.menu_footer_service__btn_span').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass('menu_footer_service__btn_active')
-// });
+$('.menu_footer_service__btn_span').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu_footer_service__btn_active')
+});
 
-// $('.menu_footer_company__btn_span').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass('menu_footer_service__btn_active')
-// });
+$('.menu_footer_company__btn_span').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('menu_footer_service__btn_active')
+});
 
 
 // МЕНЮ
-// $(document).ready(function(){
-// 			var touch = $('.menu__btn');
-// 		    var menu = $('.nav');
+$(document).ready(function(){
+			var touch = $('.menu__btn');
+		    var menu = $('.nav');
 
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
 
-//         $(document).ready(function(){
-// 			var touch = $('.internet_shop');
-// 		    var menu = $('.nav_inShop');
+        $(document).ready(function(){
+			var touch = $('.internet_shop');
+		    var menu = $('.nav_inShop');
 
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
 
-//         $(document).ready(function(){
-// 			var touch = $('.menu_footer_service__btn');
-// 		    var menu = $('.menu_service_nav');
+        $(document).ready(function(){
+			var touch = $('.menu_footer_service__btn');
+		    var menu = $('.menu_service_nav');
 
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
 
-//         $(document).ready(function(){
-// 			var touch = $('.menu_footer_company__btn');
-// 		    var menu = $('.menu_about_nav');
+        $(document).ready(function(){
+			var touch = $('.menu_footer_company__btn');
+		    var menu = $('.menu_about_nav');
 
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+		    });
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		});
 
 // СЛАЙДЕР
  $('.sl').slick({
