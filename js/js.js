@@ -1,122 +1,63 @@
-// БУРГЕР
-// $('.menu__btn').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass('menu__btn__active')
-// });
+// Фильтр
 
-// $('.menu_footer_service__btn_span').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass('menu_footer_service__btn_active')
-// });
+$(function(){
+  $('.toggles button').click(function(){
+    var get_id = this.id;
+    var get_current = $('.posts .' +get_id);
 
-// $('.menu_footer_company__btn_span').on('click', function(e) {
-//   e.preventDefault;
-//   $(this).toggleClass('menu_footer_service__btn_active')
-// });
+    $('.post').not(get_current).hide(500);
+    get_current.show(500);
+  });
 
-
-// МЕНЮ
-// $(document).ready(function(){
-// 			var touch = $('.menu__btn');
-// 		    var menu = $('.nav');
-
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
-
-//         $(document).ready(function(){
-// 			var touch = $('.internet_shop');
-// 		    var menu = $('.nav_inShop');
-
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
-
-//         $(document).ready(function(){
-// 			var touch = $('.menu_footer_service__btn');
-// 		    var menu = $('.menu_service_nav');
-
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
-
-//         $(document).ready(function(){
-// 			var touch = $('.menu_footer_company__btn');
-// 		    var menu = $('.menu_about_nav');
-
-// 		    $(touch).on('click', function(e) {
-// 		        e.preventDefault();
-// 		        menu.slideToggle();
-// 		    });
-// 		    $(window).resize(function(){
-// 		        var wid = $(window).width();
-// 		        if(wid > 760 && menu.is(':hidden')) {
-// 		            menu.removeAttr('style');
-// 		        }
-// 		    });
-// 		});
-
-// СЛАЙДЕР
- $('.sl').slick({
-  dots: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 2000,
-});
-// Форма обратной связи
-$(document).ready(function(){
-    $('#button_contacts').click(function(){
-        var form_name   = $('#form_name').val();
-        var form_email   = $('#form_email').val();
-        var form_message = $('#form_message').val();
-        $.ajax({
-            url: "post.php",
-            type: "post",
-            dataType: "json",
-            data: {
-                "form_name":   form_name,
-                "form_email":   form_email,
-                "form_message": form_message
-            },
-            success: function(data){
-                $('.messages').html(data.result);
-            }
-        });
-    });
+  $('#showall').click(function(){
+    $('.post').show(500);
+  });
 });
 
-// Плавная прокрутка
-$(document).ready(function(){
-    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
-  var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-      $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500); // анимируем скроолинг к элементу scroll_el
-        }
-      return false; // выключаем стандартное действие
-    });
+//Слайдер
+
+var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+
+// Модальное окно
+
+// открыть по кнопке
+$('.js-button-campaign').click(function() {
+
+	$('.js-overlay-campaign').fadeIn();
+	$('.js-overlay-campaign').addClass('disabled');
+});
+
+// закрыть на крестик
+$('.js-close-campaign').click(function() {
+	$('.js-overlay-campaign').fadeOut();
+
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) {
+	var popup = $('.js-popup-campaign');
+	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+		$('.js-overlay-campaign').fadeOut();
+
+	}
 });
