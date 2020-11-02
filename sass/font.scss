@@ -1,0 +1,27 @@
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "ProximaNova-Regular"; 
+    // адрес шрифта и тип 
+    src: url("../font/ProximaNova-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+    
+    @font-face {
+        // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+        font-family: "ProximaNova-Bold"; 
+        // адрес шрифта и тип 
+        src: url("../font/ProximaNova-Bold.ttf") format("truetype"); 
+        font-style: normal; 
+        font-weight: bold; 
+        } 
+
+        @font-face {
+            // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+            font-family: "Intro"; 
+            // адрес шрифта и тип 
+            src: url("../font/Intro.ttf") format("truetype"); 
+            font-style: normal; 
+            font-weight: normal; 
+            } 
+        
