@@ -1,0 +1,59 @@
+//      MIXIN
+@mixin fd-r {
+    display: flex;
+    flex-direction: row;
+  }
+  @mixin fd-c {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin count{
+    .count{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        span{
+            @include fd-r;
+            align-items: center;
+            font-size: 50px;
+            color: $lightblue;
+            &::after{
+                content: "";
+                width: 50px;
+                height: 2px;
+                background-color: $redColor;
+                display: flex;
+                margin: 10px;
+            }
+        }
+    }
+  }
+
+  @mixin titles{
+    .titles{
+      @include fd-r;
+      justify-content: space-between;
+      padding-top: 66px;
+      padding-bottom: 42px;
+      .h{
+          font-size: 30px;
+          font-weight: bold;
+          font-family: 'Montserrat', sans-serif;
+      }
+      .text{
+          position: relative;
+          &::after{
+              content: '';
+              display: flex;
+              width: 150px;
+              height: 3px;
+              background-color: $darkRed;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              margin-bottom: 10px;
+          }
+      }
+  }
+  }
