@@ -43,6 +43,7 @@
       }
       .text{
           position: relative;
+          color: $black;
           &::after{
               content: '';
               display: flex;

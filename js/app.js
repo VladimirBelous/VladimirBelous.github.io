@@ -1,58 +1,18 @@
-var mySwiperS = new Swiper('.sliderMain', {
-    
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
 
-  var mySwiperS = new Swiper('.sliderBestseller', {
-
-    slidesPerView: 5,
-    spaceBetween: 20,
-
-    
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
-
-  var mySwiperS2 = new Swiper('.slider2', {
-
-    slidesPerView: 5,
-
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
-  });
-
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
