@@ -16,3 +16,10 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+$('.burger').click(function(){
+    $('.menu_adaptive').toggleClass('menu_active');
+});
+$('.burger_cross').click(function(){
+    $('.menu_adaptive').toggleClass('menu_active');
+});

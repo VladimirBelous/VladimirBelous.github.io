@@ -1,0 +1,163 @@
+@media (max-width: 1400px) {
+    
+    .main{
+        .content{
+            .all{
+                .right{
+                    padding-left: 0;
+                    .top{
+                        flex-wrap: wrap;
+                        padding-right: 40px;
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+        display: none
+    }
+    .header_bottom{
+        .content{
+            .right{
+                .logIn{
+                    display: none;
+                }
+                .burger{
+                    @include fd-c;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+    
+    .main{
+        .content{
+            .all{
+                .left{
+                    display: none;
+                }
+            }
+        }
+    }
+    .footer{
+        .content{
+            .center{
+                .footer_nav{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 900px) {
+    
+    .main{
+        .content{
+            .all{
+                .right{
+                    .bottom{
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .content{
+            .center{
+                .policy{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 650px) {
+    
+    .header_bottom{
+        .content{
+            align-items: center;
+            .right{
+                
+                .telephone{
+                    display: none
+                }
+            }
+        }
+    }
+    .menu_adaptive{
+        .content{
+            .telephone{
+                @include fd-c;
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+    
+
+    .header_bottom{
+        .content{
+            .logo{
+                img{
+                    width: 100px;
+                    height: auto;
+                }
+            }
+        // .right{
+        //     .shopping{
+        //         img{
+        //             width: 40px;
+        //             height: 40px;
+        //         }
+        //     }
+        // }
+        }
+    }
+    .footer{
+        .content{
+            .contact{
+                .footer_logo{
+                    img{
+                        width: 100px;
+                        height: auto;
+                    }
+                }
+                .telephone{
+                    span{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1500px) {
+    
+
+
+}
+
+@media (max-width: 1500px) {
+    
+
+
+}
+
+
