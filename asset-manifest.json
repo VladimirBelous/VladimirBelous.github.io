@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.217fed7b.css",
-    "main.js": "/static/js/main.655549fe.js",
+    "main.css": "/static/css/main.dc7d4471.css",
+    "main.js": "/static/js/main.f1a38e75.js",
+    "static/media/aboutUs.jpg": "/static/media/aboutUs.f7084a88da240faf3995.jpg",
     "static/media/gazelle_img4.png": "/static/media/gazelle_img4.cb4b717587a69b304138.png",
     "static/media/gazelle_img3.png": "/static/media/gazelle_img3.b7cccb19c0056bea415d.png",
     "static/media/pianino.jpg": "/static/media/pianino.37cce54b9948df6c85ed.jpg",
@@ -11,13 +12,13 @@
     "static/media/gazelle_img0.png": "/static/media/gazelle_img0.ecc2a94277596b0afde1.png",
     "static/media/minibus.png": "/static/media/minibus.636ea76e1124df307bd6.png",
     "static/media/gazelle.png": "/static/media/gazelle.06213c17b52b15a23145.png",
-    "static/media/minibus_img0.png": "/static/media/minibus_img0.0ded29aa408c04b52f0a.png",
     "static/media/movers_full1.png": "/static/media/movers_full1.149a1bb415aad8cc7e8e.png",
     "static/media/safe.jpg": "/static/media/safe.1fdf5a629b27afd4153c.jpg",
     "static/media/movers.png": "/static/media/movers.9a3504b1142438fd5d6e.png",
     "static/media/movers_full0.jpg": "/static/media/movers_full0.792e29c649936d847f5e.jpg",
-    "static/media/minibus_img2.png": "/static/media/minibus_img2.58ee481aeb69fc52239c.png",
-    "static/media/minibus_img1.png": "/static/media/minibus_img1.3e64cf939eb06334b103.png",
+    "static/media/minibus_img0.jpg": "/static/media/minibus_img0.c0d1d0167b875039d661.jpg",
+    "static/media/minibus_img2.jpg": "/static/media/minibus_img2.e43d0feb40d932818a40.jpg",
+    "static/media/minibus_img1.jpg": "/static/media/minibus_img1.42bcffed68c31660a904.jpg",
     "static/media/minibus_img5.png": "/static/media/minibus_img5.c12ace9be09335467e97.png",
     "static/media/minibus_img4.png": "/static/media/minibus_img4.b22fb4e850cf28d18283.png",
     "static/media/benefits0.svg": "/static/media/benefits0.95138e0fcb8fb9c9f061f3e76c3b1a69.svg",
@@ -36,11 +37,11 @@
     "static/media/phoneBlue.svg": "/static/media/phoneBlue.e911e2310814baa3fbf576eee2144cd0.svg",
     "static/media/bag.svg": "/static/media/bag.a94978868d951a3c5ae0ed5e87d11a14.svg",
     "static/media/PhoneBring.svg": "/static/media/PhoneBring.0c9d8d9711f1bf4a413bac54fe816f09.svg",
-    "main.217fed7b.css.map": "/static/css/main.217fed7b.css.map",
-    "main.655549fe.js.map": "/static/js/main.655549fe.js.map"
+    "main.dc7d4471.css.map": "/static/css/main.dc7d4471.css.map",
+    "main.f1a38e75.js.map": "/static/js/main.f1a38e75.js.map"
   },
   "entrypoints": [
-    "static/css/main.217fed7b.css",
-    "static/js/main.655549fe.js"
+    "static/css/main.dc7d4471.css",
+    "static/js/main.f1a38e75.js"
   ]
 }
