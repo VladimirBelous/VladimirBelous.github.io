@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc7d4471.css",
-    "main.js": "/static/js/main.f1a38e75.js",
+    "main.css": "/static/css/main.1c465bb8.css",
+    "main.js": "/static/js/main.97fd4255.js",
     "static/media/aboutUs.jpg": "/static/media/aboutUs.f7084a88da240faf3995.jpg",
     "static/media/gazelle_img4.png": "/static/media/gazelle_img4.cb4b717587a69b304138.png",
     "static/media/gazelle_img3.png": "/static/media/gazelle_img3.b7cccb19c0056bea415d.png",
+    "static/media/slide1.jpeg": "/static/media/slide1.6f5d641dae63d54b6723.jpeg",
     "static/media/pianino.jpg": "/static/media/pianino.37cce54b9948df6c85ed.jpg",
+    "static/media/slide0.jpg": "/static/media/slide0.8ec75903d3dcaa011d0f.jpg",
     "static/media/gazelle_img5.png": "/static/media/gazelle_img5.de19f2ff7dcbbc1d2cc8.png",
     "static/media/gazelle_img1.png": "/static/media/gazelle_img1.42a567ded204f588b976.png",
     "static/media/gazelle_img2.png": "/static/media/gazelle_img2.42a567ded204f588b976.png",
@@ -37,11 +39,11 @@
     "static/media/phoneBlue.svg": "/static/media/phoneBlue.e911e2310814baa3fbf576eee2144cd0.svg",
     "static/media/bag.svg": "/static/media/bag.a94978868d951a3c5ae0ed5e87d11a14.svg",
     "static/media/PhoneBring.svg": "/static/media/PhoneBring.0c9d8d9711f1bf4a413bac54fe816f09.svg",
-    "main.dc7d4471.css.map": "/static/css/main.dc7d4471.css.map",
-    "main.f1a38e75.js.map": "/static/js/main.f1a38e75.js.map"
+    "main.1c465bb8.css.map": "/static/css/main.1c465bb8.css.map",
+    "main.97fd4255.js.map": "/static/js/main.97fd4255.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc7d4471.css",
-    "static/js/main.f1a38e75.js"
+    "static/css/main.1c465bb8.css",
+    "static/js/main.97fd4255.js"
   ]
 }
